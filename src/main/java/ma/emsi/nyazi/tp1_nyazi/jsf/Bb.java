@@ -1,6 +1,5 @@
 package ma.emsi.nyazi.tp1_nyazi.jsf;
 
-
 import jakarta.faces.application.FacesMessage;
 import jakarta.faces.context.FacesContext;
 import jakarta.faces.model.SelectItem;
@@ -136,7 +135,6 @@ public class Bb implements Serializable {
         afficherConversation();
         return null;
     }
-
 
     /**
      * Pour un nouveau chat.
