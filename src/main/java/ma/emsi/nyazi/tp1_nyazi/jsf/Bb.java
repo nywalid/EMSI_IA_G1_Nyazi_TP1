@@ -21,6 +21,24 @@ import java.util.Locale;
 @ViewScoped
 public class Bb implements Serializable {
 
+    // les nouveaux champs
+    private boolean debug;
+    private String texteRequeteJson;
+    private String texteReponseJson;
+
+    public boolean isDebug() { return debug; }
+    public void setDebug(boolean debug) { this.debug = debug; }
+
+    public String getTexteRequeteJson() { return texteRequeteJson; }
+    public void setTexteRequeteJson(String texteRequeteJson) { this.texteRequeteJson = texteRequeteJson; }
+
+    public String getTexteReponseJson() { return texteReponseJson; }
+    public void setTexteReponseJson(String texteReponseJson) { this.texteReponseJson = texteReponseJson; }
+
+    public void toggleDebug() {
+        this.setDebug(!isDebug());
+    }
+
     /**
      * Rôle "système" que l'on attribuera plus tard à un LLM.
      * Valeur par défaut que l'utilisateur peut modifier.
