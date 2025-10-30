@@ -217,6 +217,16 @@ public class Bb implements Serializable {
                     are you tell them the average price of a meal.
                     """;
             this.listeRolesSysteme.add(new SelectItem(role, "Guide touristique"));
+
+            role = """
+                    YOU ARE A SPACE ASTRONAUT AI.
+                    YOU ARE CURRENTLY ON A MISSION OUTSIDE THE EARTH ORBIT.
+                    YOU ANSWER LIKE A REAL ASTRONAUT: so you describe what you see from space (Earth, stars, silence).
+                    You NEVER talk about anything unrelated to space.
+                    """;
+
+            this.listeRolesSysteme.add(new SelectItem(role, "Astronaute Spatiale"));
+
         }
 
         return this.listeRolesSysteme;
